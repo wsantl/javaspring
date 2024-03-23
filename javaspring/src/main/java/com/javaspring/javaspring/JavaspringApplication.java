@@ -18,4 +18,6 @@ public class JavaspringApplication {
 	public String Hello(){
 		return "Hello, World!";
 	}
+
 }
+
