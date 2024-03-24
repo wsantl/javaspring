@@ -1,19 +1,24 @@
 package com.javaspring.javaspring;
 import java.io.Serializable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
-
+@Entity
+//@Table(name = "tb_user")
 public class User implements Serializable{
     //private static final long serialVersion UID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String phone;
     private String password;
 
     public User(long l, String string, String string2, String string3, String string4){
-
     }
-
 
     public User(Long id, String name, String phone, String password) {
         this.id = id;
@@ -79,7 +84,4 @@ public class User implements Serializable{
         return true;
     }
 
-    
-
 }
-

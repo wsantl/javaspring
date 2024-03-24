@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class JavaspringApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(JavaspringApplication.class, args);
 	}
@@ -18,6 +17,5 @@ public class JavaspringApplication {
 	public String Hello(){
 		return "Hello, World!";
 	}
-
 }
 
